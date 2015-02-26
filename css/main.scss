@@ -7,14 +7,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 // Our variables
 $base-font-family: Lato,Helvetica, Arial, sans-serif;
-$base-font-size:   13px;
+$base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     20px;
 
 $avatar-radius: 50%;
-$text-color:       #777;
+$text-color:       #444;
 $background-color: #fdfdfd;
 $brand-color:      #222;
 $link-color:       #39c;
@@ -24,10 +24,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    600px;
+$content-width:    650px;
 
-$on-palm:          600px;
-$on-laptop:        600px;
+$on-palm:          650px;
+$on-laptop:        650px;
 
 
 // Using media queries with like this:

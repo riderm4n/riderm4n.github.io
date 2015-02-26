@@ -17,14 +17,13 @@
   background-size:contain;
   display:block;
   margin:0 auto;
-  @include border-radius($avatar-radius);
   @include transition(all, 0.7s, ease-in-out);
-  &:hover{
+  /*&:hover{
     background:url("../images/web/ichigo.jpg");
     @include transition(all, 0.7s, ease-in-out);
     background-size:contain;
 
-  }
+  }*/
 
 }
 

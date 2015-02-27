@@ -253,3 +253,20 @@
       margin-top:20px
     }
 }
+.m-focused .m-postinput{
+  border-color:$grey-color!important;
+  box-shadow:none!important;
+  min-height:3.6em
+}
+.m-input:focus, .m-input-wrap:focus, .m-postinput:focus {
+  border-color: $grey-color!important;
+  outline: none!important;
+}
+#moot-logo{
+  padding:0!important;
+
+  a{
+    display: none!important;
+  }
+
+}

@@ -64,48 +64,7 @@
       width:100%;
       text-align:center;
     }
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-          width:100%;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
 }
 
 
@@ -176,6 +135,17 @@
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
+    .post-meta{
+      display:block;
+    }
+    .post-list{
+      .categories{
+        display:none;
+      }
+      >li{
+        margin-bottom:20px;
+      }
+    }
 }
 
 
@@ -196,7 +166,11 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+
+    }
+    .categories{
+      float:right;
+      color:$grey-color;
     }
 }
 
@@ -253,5 +227,29 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+    p{
+      text-align:justify;
+      margin-bottom:20px
+    }
+    table{
+      width:100%;
+    }
+    .video-wrapper{
+      position: relative;
+    	padding-bottom: 56.25%; /* 16:9 */
+    	padding-top: 25px;
+    	height: 0;
+    }
+    .video-wrapper iframe {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    }
+    .catntags{
+      color:$grey-color;
+      margin-top:20px
     }
 }

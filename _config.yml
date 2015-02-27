@@ -2,10 +2,22 @@
 title: riderm4n
 email: iam@riderm4n.com
 description: > # this means to ignore newlines until "baseurl:"
-  a kamen rider, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua/
+  a kamen coder, kamen rider who code for henshin
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://riderm4n.com" # the base hostname & protocol for your site
+url: "http://iam.riderm4n.com" # the base hostname & protocol for your site
 github_username:  riderm4n
+
 
 # Build settings
 markdown: kramdown
+
+#Default var
+defaults:
+-
+  scope:
+    path: ""
+    type: "posts"
+  values:
+    comments: "true"
+    layout: "post"
+  

@@ -10,6 +10,23 @@ layout: default
 
   <article class="post-content">
     {{ content }}
+    <div class="catntags">
+      In
+      {% for cat in page.categories %}
+        <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>&nbsp;
+      {% endfor %}
+      {% if page.tags != empty %}
+        Tags :
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }} </a>
+        {% endfor %}
+      {% endif %}
+    </div>
   </article>
 
+
+
 </div>
+{% if page.comments %}
+  <div id="disqus_thread"></div>
+{% endif %}

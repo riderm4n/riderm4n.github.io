@@ -22,7 +22,7 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
-p{line-height:1.6}
+
 
 
 /**
@@ -139,7 +139,7 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     > code {
         border: 0;

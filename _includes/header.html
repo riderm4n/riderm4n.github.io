@@ -6,13 +6,12 @@
       <img src="{{ site.baseurl}}/images/web/ichigo.jpg" class="rider"/>-->
     </a>
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <br>{{ site.description }}
 
     <nav class="site-nav">
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
+        {% for link in site.data.nav %}
+          <a class="page-link" href="{{ site.baseurl }}/{{ link.url }}">{{ link.title }}</a>
         {% endfor %}
       </div>
     </nav>

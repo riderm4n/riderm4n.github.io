@@ -1,11 +1,10 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about.html
+
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+**About this website?** This web actually a media to me to write anything. Since I code a web for living, this site also my place for my experiment. This site is powered by <strike>wordpress</strike> [jekyll](http://jekyllrb.com){:target="_blank"}. The theme is designed by myself. You can fork it [here](https://github.com/riderm4n/riderm4n.github.io){:target="_blank"}. The design is the fusion of my favorite blogs, like [nicolasgallagher.com](http://nicolasgallagher.com/){:target="_blank"}, [minimallyminimal.com](http://www.minimallyminimal.com/){:target="_blank"}, [blog.penso.info](http://blog.penso.info){:target="_blank"}
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+**About me?** I code a website for living, big fan of super heroes, kamen riders, listen to music, and most of all, I love my wife Nevya Rizawa. See the detail [here](faq.html).

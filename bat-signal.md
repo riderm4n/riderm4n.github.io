@@ -4,4 +4,4 @@ title: Bat signal
 permalink: /bat-signal.html
 
 ---
-<div id="disqus_thread"></div>
+<a class="muut" href="https://muut.com/i/tonysj/comments" type="dynamic">riderm4n</a>

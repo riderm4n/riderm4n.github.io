@@ -20,4 +20,11 @@ defaults:
   values:
     comments: "true"
     layout: "post"
+
+
+collections :
+    products :
+        output : true
+        permalink: /shop/:path/
+
   

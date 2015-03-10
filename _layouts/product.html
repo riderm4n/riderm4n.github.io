@@ -3,30 +3,32 @@ layout: default
 ---
 <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-<!--    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>-->
-  </header>
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+    </header>
 
-  <article class="post-content">
-    {{ content }}
-    <div class="catntags">
-      In
-      {% for cat in page.categories %}
-        <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>&nbsp;
-      {% endfor %}
-      {% if page.tags != empty %}
-        Tags :
-        {% for tag in page.tags %}
-          <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }} </a>
-        {% endfor %}
-      {% endif %}
-    </div>
-  </article>
+    <article class="post-content">
+        <div class="product-images">
+            <div><img src="{{ page.image1 }}" /></div>
+            {% if page.image2 %}
+                <div><img src="{{ page.image2 }}" /></div>
+            {% endif %}
+            {% if page.image3 %}
+                <div><img src="{{ page.image3 }}" /></div>
+            {% endif %}
+        </div>
+        <p>Price : Rp. {{ page.price }}, -<br>
+        {% if page.colors %}
+            Colors : {{ page.colors }}
+        {% endif %}
+        </p>
+        {{ content }}
+
+    </article>
 
 
 
 </div>
-{% if page.comments %}
+<p>&nbsp;</p>
+<p><small>If you have questions / interested in this product, please fill in the comment box below, Ill proceed it ASAP</small></p>
 <a class="muut" href="https://muut.com/i/riderm4n/comments" type="dynamic">riderm4n</a>
-{% endif %}

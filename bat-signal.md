@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bat signal
-permalink: /bat-signal.html
+permalink: /bat-signal/
 ---
 
 You can email me here <mailto:iam@riderm4n.com> or leave a comment below

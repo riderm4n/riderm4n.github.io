@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Faq
-permalink: /faq.html
+permalink: /faq/
 
 ---
 **Who the fuck are you?**  

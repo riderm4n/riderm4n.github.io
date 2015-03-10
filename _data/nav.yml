@@ -1,11 +1,11 @@
 - title : About
-  url : about.html
+  url : about/
 
 - title : Faq
-  url : faq.html
+  url : faq/
 
 - title : Shop
-  url : shop.html
+  url : shop/
 
 - title : Bat Signal
-  url : bat-signal.html
+  url : bat-signal/

@@ -39,6 +39,7 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+.row{max-width:800px}
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;

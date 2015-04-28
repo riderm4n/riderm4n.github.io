@@ -30,6 +30,6 @@ I love all superheroes related. If you ask me to choose one, I cant. Because I h
 Are you retarded?Of course not.
 
 **If I want to contact you, what shoul I do?**  
-Please light up the [bat signal](/bat-signal.html).
+Please light up the [bat signal](/bat-signal).
 
 **Hmmm**

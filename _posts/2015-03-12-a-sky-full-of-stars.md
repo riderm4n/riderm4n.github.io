@@ -7,6 +7,6 @@ tags: rizawa
 ---
 Cause you are the sky full of stars. Iyaaa kamu..
 
-<div class="video-wrapper">
+<div class="vid">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VPRjCeoBqrI" frameborder="0" allowfullscreen></iframe>
 </div>

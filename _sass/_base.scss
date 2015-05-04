@@ -36,11 +36,6 @@ ul, ol, dl, figure,
     font-family: $base-font-family;
 
 }
-//p{
-//	font-family: $secondary-font;
-//}
-
-
 
 /**
  * Images
@@ -135,7 +130,7 @@ code {
     font-size: 12px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: transparent;
 }
 
 code {

@@ -20,6 +20,14 @@ defaults:
   values:
     comments: "true"
     layout: "post"
+-
+  scope:
+    path: ""
+    type: "posts"
+  values:
+    featured: "false"
+    layout: "post"
+
 
 
 collections :

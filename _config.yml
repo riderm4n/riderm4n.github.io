@@ -4,7 +4,7 @@ email: iam@riderm4n.com
 description: > # this means to ignore newlines until "baseurl:"
   a kamen coder, kamen rider who code for henshin
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://iam.riderm4n.com" # the base hostname & protocol for your site
+url: "http://riderm4n.com" # the base hostname & protocol for your site
 github_username:  riderm4n
 
 

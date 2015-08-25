@@ -18,25 +18,19 @@
   display:block;
   margin:0 auto;
   @include transition(all, 0.7s, ease-in-out);
-  /*&:hover{
-    background:url("../images/web/ichigo.jpg");
-    @include transition(all, 0.7s, ease-in-out);
-    background-size:contain;
-
-  }*/
+  
 
 }
 
 .site-title {
     font-size: 26px;
     line-height: 56px;
-    letter-spacing: -1px;
     margin-bottom: 0;
-    font-weight:bold;
+    font-family: $title-font;
 
     &,
     &:visited {
-        color: $brand-color;
+        color:#000;
     }
 }
 
@@ -46,14 +40,15 @@
     top:20px;
     left:0px;
 
-
     .menu-icon {
         display: none;
     }
-
     .page-link {
-        color: $text-color;
+        color: $link-color;
         line-height: $base-line-height;
+        &:hover{
+            color:$text-color;
+        }
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -77,64 +72,7 @@
     padding: $spacing-unit 0;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
 @include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
     .post-meta{
       display:block;
     }
@@ -144,6 +82,7 @@
       }
       >li{
         margin-bottom:20px;
+        padding:3px 0;
       }
     }
 }
@@ -154,19 +93,21 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 30px 0;
 }
 
 .page-heading {
     font-size: 20px;
+    letter-spacing: 2px;
 }
 
-.post-list {
+ul.post-list {
     margin-left: 0;
     list-style: none;
+    font-size: 14px;
 
     > li {
-
+        padding:3px 0;
     }
     .categories{
       float:right;
@@ -180,7 +121,7 @@
 }
 
 .post-link {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 
@@ -193,7 +134,7 @@
 }
 
 .post-title {
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: 0px;
     line-height: 1;
 
@@ -293,4 +234,9 @@ span.load-more{
     display: none!important;
   }
 
+}
+.share-page{
+    a{
+        font-size: 20px;
+    }
 }

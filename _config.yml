@@ -27,12 +27,3 @@ defaults:
   values:
     featured: "false"
     layout: "post"
-
-
-
-collections :
-    products :
-        output : true
-        permalink: /shop/:path/
-
-  

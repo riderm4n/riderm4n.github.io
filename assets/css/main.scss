@@ -3,31 +3,33 @@
 ---
 @charset "utf-8";
 
-@import  url(http://fonts.googleapis.com/css?family=Cutive+Mono|Droid+Sans+Mono);
+@import  url(http://fonts.googleapis.com/css?family=Cutive+Mono|Droid+Sans+Mono|Bangers|Press+Start+2P);
+
 
 // Our variables
-$base-font-family: 'Cutive Mono';
-$base-font-size:   15px;
+$base-font-family: 'Droid Sans Mono';
+$base-font-size:   12px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6;
+$title-font:'Press Start 2P', cursive;
 
 $spacing-unit:     20px;
 
 $avatar-radius: 50%;
-$text-color:       #444;
+$text-color:       #aaa;
 $background-color: #fdfdfd;
-$brand-color:      #222;
-$link-color:       #39c;
+$brand-color:      #aaa;
+$link-color:       #444;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    700px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:          400px;
+$on-laptop:        700px;
 
 
 // Using media queries with like this:

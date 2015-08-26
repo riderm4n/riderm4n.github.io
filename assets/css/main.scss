@@ -10,16 +10,16 @@
 $base-font-family: 'Droid Sans Mono';
 $base-font-size:   12px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.6;
+$base-line-height: 18px;
 $title-font:'Press Start 2P', cursive;
 
 $spacing-unit:     20px;
 
 $avatar-radius: 50%;
-$text-color:       #aaa;
+$text-color:       #000;
 $background-color: #fdfdfd;
-$brand-color:      #aaa;
-$link-color:       #444;
+$brand-color:      #000;
+$link-color:       #aaa;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -27,8 +27,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    700px;
-
-$on-palm:          400px;
+$on-palm:          480px;
 $on-laptop:        700px;
 
 
@@ -39,7 +38,7 @@ $on-laptop:        700px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-.row{max-width:800px}
+.row{max-width:700px}
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;

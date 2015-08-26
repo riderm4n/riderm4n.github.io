@@ -3,15 +3,13 @@ layout: default
 ---
 
 <div class="home">
-    <h1 class="page-heading">Featured Posts</h1>
-    <ul class="post-list">
-        {% for post in site.posts %} {% if post.featured == true %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <span class="categories">{{ post.categories }}</span>
-        </li>
-        {% endif %} {% endfor %}
+    <h1 class="page-heading"></i></h1>
+    <ul class="post-list featured">
+        {% for post in site.posts %} 
+            {% if post.featured == true %}
+                <li><i class="fa fa-thumb-tack"></i> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+            {% endif %} 
+        {% endfor %}
     </ul>
     <p>&nbsp;</p>
 
@@ -21,7 +19,7 @@ layout: default
         <li>
             <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            <span class="categories">{{ post.categories }}</span>
+            <span class="categories"><sup>({{ post.categories }})</sup></span>
         </li>
         {% endfor %}
     </ul>

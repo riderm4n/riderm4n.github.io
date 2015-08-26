@@ -37,7 +37,9 @@
 .site-nav {
     position:fixed;
     width:100%;
-    top:20px;
+    padding:10px 0;
+    z-index:10;
+    background: $background-color;
     left:0px;
 
     .menu-icon {
@@ -104,24 +106,24 @@
 ul.post-list {
     margin-left: 0;
     list-style: none;
-    font-size: 14px;
+    font-size: 13px;
 
     > li {
         padding:3px 0;
     }
     .categories{
-      float:right;
+      
       color:$grey-color;
     }
 }
 
 .post-meta {
-    color: $grey-color;
+    color: $text-color;
     margin-right:20px;
 }
 
 .post-link {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 
@@ -139,7 +141,7 @@ ul.post-list {
     line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
 
@@ -147,10 +149,10 @@ ul.post-list {
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: 28px;
 
         @include media-query($on-laptop) {
-            font-size: 28px;
+            font-size: 26px;
         }
     }
 
@@ -158,12 +160,12 @@ ul.post-list {
         font-size: 26px;
 
         @include media-query($on-laptop) {
-            font-size: 22px;
+            font-size: 24px;
         }
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 24px;
 
         @include media-query($on-laptop) {
             font-size: 18px;
@@ -223,6 +225,17 @@ span.load-more{
   box-shadow:none!important;
   min-height:3.6em
 }
+.m-button, .moot button {
+    padding: .6em 1.8em;
+    border-radius: 0!important;
+    font-size: .9em;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    background-color: $brand-color!important;
+    cursor: pointer;
+    border: 0;
+}
 .m-input:focus, .m-input-wrap:focus, .m-postinput:focus {
   border-color: $grey-color!important;
   outline: none!important;
@@ -239,4 +252,26 @@ span.load-more{
     a{
         font-size: 20px;
     }
+}
+input[type="submit"]{
+  background: $text-color;
+  border:1px solid $text-color;
+  color:#fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding:10px 30px;
+
+}
+input[type="submit"]:hover{
+  background: lighten($text-color, 40%);
+  border:1px solid lighten($text-color, 40%);
+  color:#fff;
+}
+input[type="text"],textarea{
+  font-size: 12px;
+}
+::selection {
+    background: black;
+    color: white;
+    text-shadow: none;
 }

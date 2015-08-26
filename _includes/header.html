@@ -1,3 +1,10 @@
+ <nav class="site-nav">
+    <div class="trigger">
+      {% for link in site.data.nav %}
+        <a class="page-link" href="{{ site.baseurl }}/{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+    </div>
+  </nav>
 <header class="site-header">
 
   <div class="wrapper">
@@ -8,13 +15,6 @@
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     <br>{{ site.description }}
 
-    <nav class="site-nav">
-      <div class="trigger">
-        {% for link in site.data.nav %}
-          <a class="page-link" href="{{ site.baseurl }}/{{ link.url }}">{{ link.title }}</a>
-        {% endfor %}
-      </div>
-    </nav>
 
   </div>
 

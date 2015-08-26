@@ -93,7 +93,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($link-color, 15%);
+        color: $link-color;
     }
 
     &:hover {
@@ -204,6 +204,6 @@ pre {
 }
 
 p{
-    font-size:13px;
-    line-height: 1.8;
+    font-size:12px;
+    line-height: 18px;
 }

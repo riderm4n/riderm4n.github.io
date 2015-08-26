@@ -8,29 +8,30 @@
 {% assign text = '{{caption}}' %}
 <script>
     $(document).foundation();
-    $(document).ready(function(){
-        $('.vid').fitVids();
-
-        //instagram
-       var loadButton = document.getElementById('load-more');
-	   var userFeed = new Instafeed({
-	        get: 'user',
-	        userId: 30619238,
-	        accessToken: '30619238.467ede5.115b1f5d14d64afa82356649a56cc8f8',
-	        resolution:'standard_resolution',
-	        links:false,
-	        template: '<div class="ig-wrapper"><img src="{{url}}" /><p>{{text}}</p></div>',
-	        after: function() {
+    $(document).ready(function(){      
+		//instagram
+		var loadButton = document.getElementById('load-more');
+		var userFeed = new Instafeed({
+			get: 'user',
+			userId: 30619238,
+			accessToken: '30619238.467ede5.115b1f5d14d64afa82356649a56cc8f8',
+			resolution:'standard_resolution',
+			links:false,
+			template: '<div class="ig-wrapper"><img src="{{url}}" /><p>{{text}}</p></div>',
+			after: function() {
 				// disable button if no more results to load
 			    if (!this.hasNext()) {
 			      loadButton.setAttribute('disabled', 'disabled');
 			    }
 			},
-	    });
-	   	loadButton.addEventListener('click', function() {
-		  userFeed.next();
+			filter: function(image) {
+			    return image.tags.indexOf('riderm4n.com') >= 0;
+			}
 		});
-	    userFeed.run();
+		loadButton.addEventListener('click', function() {
+			userFeed.next();
+		});
+		userFeed.run();
 	});
 	  
 </script>
